@@ -1,0 +1,11 @@
+Function: check_graph_isomorphism(graph1: Graph, graph2: Graph) -> bool
+Description: Given two graphs represented by the custom Graph class, determine if they are isomorphic. Two graphs are isomorphic if there exists a bijection between their vertex sets such that an edge exists between two vertices in the first graph if and only if an edge exists between the corresponding vertices in the second graph. The function should return True if the graphs are isomorphic and False otherwise. The function must be implemented without relying on any non-standard python libraries.
+
+class Graph:
+    def __init__(self, num_vertices: int):
+        self.num_vertices = num_vertices
+        self.adj = {i: [] for i in range(num_vertices)}
+    def add_edge(self, u: int, v: int) -> None:
+        self.adj[u].append(v)
+
+Include the given class in your code. You are not allowed to modify it.

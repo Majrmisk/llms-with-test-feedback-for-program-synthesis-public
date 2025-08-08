@@ -1,0 +1,2 @@
+Function: can_measure(jug1: int, jug2: int, target: int, max_moves: int) -> bool
+Description: Given two jugs with capacities jug1 and jug2 liters and a target volume, determine whether it's possible to measure exactly the target volume in one of the jugs using at most max_moves moves. A move is defined as filling a jug, emptying a jug, or transferring water between jugs until one jug is either empty or full.

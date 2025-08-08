@@ -1,0 +1,6 @@
+Function: simplify_continued_fraction(cf: list[int]) -> tuple[int, int]
+Description: Given a finite continued fraction [a0, a1, a2, ..., an] in list form, this function returns the fraction p/q in simplest terms as a tuple (p, q). A continued fraction is interpreted as
+
+a0 + 1/(a1 + 1/(a2 + ... + 1/an))
+
+The function processes the list from right to left, constructing the fraction by starting from an/1 and iteratively incorporating each preceding element. The final fraction is then reduced to simplest form (p/q with gcd(p, q) = 1).

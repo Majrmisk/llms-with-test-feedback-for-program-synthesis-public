@@ -1,0 +1,13 @@
+Function: find_articulation_points(graph: Graph) -> List[int]
+Description: Given an undirected graph represented by the custom Graph class, compute all articulation points (cut vertices) using a DFS-based algorithm. An articulation point is a vertex whose removal increases the number of connected components in the graph. The algorithm should maintain discovery times and low-link values to identify vertices that satisfy the articulation point conditions. The function returns a list of vertex indices that are articulation points.
+
+class Graph:
+    def __init__(self, num_vertices: int):
+        self.num_vertices = num_vertices
+        self.adj = {i: [] for i in range(num_vertices)}
+        
+    def add_edge(self, u: int, v: int) -> None:
+        self.adj[u].append(v)
+        self.adj[v].append(u)
+
+Include the given class in your code. You are not allowed to modify it.

@@ -1,0 +1,16 @@
+Function: custom_sha256(message: bytes) -> bytes:
+Description: Implement a function custom_sha256(message: bytes) -> bytes that computes the SHA-256 hash of the input message following the FIPS 180-4 specification. Your implementation must:
+
+Message Padding:
+Append the appropriate padding to the message so that its length becomes a multiple of 512 bits, including the length field.
+
+Block Processing:
+Split the padded message into 512-bit blocks and process each block sequentially. For each block, generate a 64-entry message schedule array.
+
+Compression Function:
+Initialize working variables with the standard SHA-256 initial hash values. For each block, update these variables using the SHA-256 compression function, which involves bitwise operations (rotations, shifts, and XORs) and a series of constants.
+
+Final Hash Computation:
+After processing all blocks, combine the working variables to form the final 256-bit (32-byte) hash digest.
+
+You are not allowed to use any non-standard python libraries

@@ -1,0 +1,6 @@
+Function: simulate_game_of_life(initial_state: List[List[int]], steps: int) -> List[List[int]]
+Description: Given an initial state of the Game of Life represented as a 2D grid (with 1 indicating a live cell and 0 indicating a dead cell), simulate the evolution of the grid for a specified number of steps according to Conway's Game of Life rules:
+- Any live cell with fewer than two live neighbors dies (underpopulation).
+- Any live cell with two or three live neighbors lives on to the next generation.
+- Any live cell with more than three live neighbors dies (overpopulation).
+- Any dead cell with exactly three live neighbors becomes a live cell (reproduction).

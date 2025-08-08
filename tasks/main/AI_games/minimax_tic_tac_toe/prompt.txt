@@ -1,0 +1,2 @@
+Function: minimax_tic_tac_toe(board: List[List[str]], is_maximizing: bool) -> int
+Description: Given a Tic Tac Toe board represented as a 2D list of strings (e.g., "X", "O", or empty), implement the minimax algorithm with recursive backtracking to evaluate the board. The function must simulate every possible move, correctly handle terminal states (win, loss, draw), and return an evaluation score that reflects the best outcome achievable for the current player. "X" is the maximizing player and "O" is the minimizing player.

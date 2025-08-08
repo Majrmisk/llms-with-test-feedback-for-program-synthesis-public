@@ -1,0 +1,2 @@
+Function: kth_smallest_pair_sum(arr: List[int], k: int) -> int
+Description: Given an unsorted array of integers, determine the kth smallest sum that can be formed by adding two distinct elements from the array. The function must compute the kth smallest pair sum without explicitly generating all possible pairs. To achieve this, it should use an efficient selection strategy—such as recursive partitioning (or a binary search–based approach) over the range of possible pair sums—to isolate the kth smallest sum.

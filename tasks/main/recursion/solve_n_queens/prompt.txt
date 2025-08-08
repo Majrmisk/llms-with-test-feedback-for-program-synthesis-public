@@ -1,0 +1,2 @@
+Function: solve_n_queens(n: int) -> List[List[str]]
+Description: Given an integer n, return all distinct solutions to the n-queens puzzle. Each solution is represented as a list of n strings (the chessboard), where '.' indicates an empty cell and 'Q' indicates a queen. The function must use recursion and backtracking to place queens such that no two queens attack each other (i.e., no shared row, column, or diagonal).

@@ -1,0 +1,2 @@
+Function: check_connect_four_winner(board: List[List[int]]) -> Optional[int]
+Description: Given a Connect Four board (a 2D list where 0 represents an empty cell, 1 represents player 1, and 2 represents player 2), determine if either player has four in a row horizontally, vertically, or diagonally. Return the winning player's number if a winner is found, or None otherwise.

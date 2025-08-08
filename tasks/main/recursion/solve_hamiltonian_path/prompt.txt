@@ -1,0 +1,2 @@
+Function: solve_hamiltonian_path(graph: List[List[int]]) -> List[int]
+Description: Given a graph represented as an adjacency matrix, find a Hamiltonian path that visits every vertex exactly once. The function must employ recursion and backtracking to explore all possible paths, carefully handling cycles and multiple potential starting points. It should correctly backtrack when a dead-end is reached, and ultimately return a valid Hamiltonian path as a list of vertex indices if one exists, or an empty list if no such path can be found.

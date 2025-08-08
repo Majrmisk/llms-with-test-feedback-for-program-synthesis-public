@@ -1,0 +1,3 @@
+Function: diffie_hellman_key_exchange(private_key: int, public_component: int, prime: int, generator: int) -> int
+Description: Simulate a Diffie-Hellman key exchange by computing the shared secret. Given your private key and the other party’s public component, use efficient modular exponentiation to compute the shared secret as (public_component^private_key mod prime).
+You are not allowed to use any non-standard python libraries

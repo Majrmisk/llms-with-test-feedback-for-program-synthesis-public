@@ -1,0 +1,3 @@
+Function: compute_convex_hull(points: List[Tuple[float, float]]) -> List[int]
+Description: Given a list of points in the two-dimensional plane, compute the convex hull that encloses all the points. The convex hull should be represented as a list of indices corresponding to the input points that form the convex hull, arranged in counterclockwise order starting from the point with the lowest x-coordinate (and lowest y-coordinate in case of a tie). The function must implement a robust algorithm that handles degenerate cases, including collinear or duplicate points, and ensure a consistent ordering of the hull.
+You are not allowed to use any non-standard python libraries

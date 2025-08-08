@@ -1,0 +1,2 @@
+Function: min_window_substring(s: str, t: str) -> str
+Description: Given two strings s and t, find the smallest substring of s that contains all characters in t, including the correct count for duplicate characters. If no such substring exists, return an empty string. In case of multiple valid windows, the algorithm should return the first.

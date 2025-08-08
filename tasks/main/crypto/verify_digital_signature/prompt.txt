@@ -1,0 +1,3 @@
+Function: verify_digital_signature(message: bytes, signature: bytes, public_key: Tuple[int, int]) -> bool
+Description: Given a message, its corresponding digital signature, and an RSA public key (n, e), verify the signature's validity. The function should decrypt the signature using the public key, recover the hash, and compare it to the hash computed from the message. For this assignment, the hash is defined as the sum of the byte values of the message. The function must correctly handle padding schemes (e.g., PKCS#1 v1.5) and edge cases such as corrupted or improperly formatted signatures.
+You are not allowed to use any non-standard python libraries

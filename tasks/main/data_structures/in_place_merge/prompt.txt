@@ -1,0 +1,2 @@
+Function: in_place_merge(arr: List[int], start: int, mid: int, end: int) -> None
+Description: Given an array arr and three indices start, mid, and end, merge the two sorted subarrays arr[start:mid] and arr[mid:end] in place so that arr[start:end] becomes sorted in ascending order. The algorithm must perform the merge in place without allocating a temporary array proportional to the number of elements, ensuring minimal extra space usage.

@@ -1,0 +1,3 @@
+Function: playfair_cipher_encrypt(plaintext: str, key: str) -> str
+Description: Given a plaintext and a keyword, encrypt the plaintext using the Playfair cipher. The function should generate a 5x5 key square from the keyword, merging letters as needed and treating the letters J and I as equivalent (i.e., any occurrence of J should be replaced with I). Then, apply the Playfair encryption rules on pairs of letters—handling edge cases such as repeated letters in a pair by inserting a filler character.
+You are not allowed to use any non-standard python libraries

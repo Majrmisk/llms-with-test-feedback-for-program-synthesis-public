@@ -1,0 +1,2 @@
+Function: find_median_of_two_sorted_arrays(arr1: List[int], arr2: List[int]) -> float
+Description: Given two sorted arrays, compute the median of the combined array without fully merging them. The function must implement a binary search-based approach that partitions the arrays into left and right halves such that all elements in the left halves are less than or equal to those in the right halves.

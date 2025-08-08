@@ -1,0 +1,23 @@
+Function: delete_from_red_black_tree(tree: RedBlackTree, key: int) -> None
+Description: Remove a node with the given key from a red-black tree while preserving all red-black properties. The deletion must handle the following scenarios: deletion of a leaf node, deletion of a node with one child, and deletion of a node with two children. After removing the node, the function must perform the necessary fix-up operations (rotations and recoloring) to ensure that:
+
+The root remains black.
+Red nodes do not have red children.
+Every path from the root to a leaf contains the same number of black nodes.
+The operation is performed in-place on the provided tree.
+
+```
+class RedBlackTreeNode:
+    def __init__(self, key: int, color: str):
+        self.key = key
+        self.color = color  # "red" or "black"
+        self.left: Optional['RedBlackTreeNode'] = None
+        self.right: Optional['RedBlackTreeNode'] = None
+        self.parent: Optional['RedBlackTreeNode'] = None
+
+class RedBlackTree:
+    def __init__(self):
+        self.root: Optional[RedBlackTreeNode] = None
+```
+
+Include the given classes in your code. You are not allowed to modify them.

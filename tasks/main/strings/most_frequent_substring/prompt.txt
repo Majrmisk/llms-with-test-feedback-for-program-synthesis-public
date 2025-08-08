@@ -1,0 +1,2 @@
+Function: most_frequent_substring(s: str, k: int) -> str
+Description: Given a string s and an integer k, find the substring of length k that occurs most frequently in s, ignoring whitespace. In case of ties, return the lexicographically smallest substring among those with the highest frequency.

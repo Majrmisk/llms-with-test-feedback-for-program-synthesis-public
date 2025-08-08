@@ -1,0 +1,26 @@
+Function: bulk_load_b_tree(sorted_elements: List[int], t: int) -> BTree
+Description:
+Construct a B-tree of minimum degree t from a given sorted list of integers using an efficient bulk-loading algorithm. The construction should minimize the number of splits and ensure an optimal tree structure by directly building balanced nodes instead of performing repeated insertions.
+
+B-tree Properties to Maintain:
+Every node (except the root) contains between t-1 and 2t-1 keys.
+All leaves are at the same depth (i.e., the tree remains balanced).
+The keys within each node are stored in sorted order.
+A B-tree of minimum degree t can have up to 2t children per node.
+The function must efficiently construct the tree, ensuring that nodes are created with an optimal number of keys from the outset instead of inserting keys one by one. The resulting BTree must support standard B-tree operations while maintaining a height that is logarithmic in the number of elements.
+
+```
+class BTreeNode:
+    def __init__(self, t: int, leaf: bool):
+        self.t = t  # Minimum degree
+        self.leaf = leaf  # True if this node is a leaf
+        self.keys: List[int] = []  # List of keys in this node
+        self.children: List['BTreeNode'] = []  # List of child pointers
+
+class BTree:
+    def __init__(self, t: int):
+        self.t = t
+        self.root: Optional[BTreeNode] = None
+```
+
+Include the given classes in your code. You are not allowed to modify them.

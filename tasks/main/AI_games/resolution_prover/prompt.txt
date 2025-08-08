@@ -1,0 +1,3 @@
+Function: resolution_prover(clauses: List[List[str]]) -> bool
+Description: Given a set of propositional clauses, where each clause is represented as a list of literals (strings such as "P" for a positive literal and "~P" for its negation), apply the resolution method to determine if a contradiction can be derived. The function returns True if an empty clause (indicating unsatisfiability) is derived, and False otherwise. The resolution process continues until no new clauses can be generated or an empty clause is derived.
+You are not allowed to use any non-standard python libraries.

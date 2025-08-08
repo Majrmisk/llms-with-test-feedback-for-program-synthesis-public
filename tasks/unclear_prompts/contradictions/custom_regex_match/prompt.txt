@@ -1,0 +1,11 @@
+Function: custom_regex_match(s: str, pattern: str) -> bool
+Description:
+Implement a custom regex engine that determines whether the entire string s matches the regex pattern—without using any built‐in regex libraries.
+
+Literal Characters: Each ordinary character matches itself.
+Wildcard (.): Matches any single character.
+Kleene Star (*): Matches zero or more occurrences of the preceding element.
+Plus Quantifier (+): Matches one or more occurrences of the preceding element.
+Question Mark (?): Matches zero or one occurrence of the preceding element.
+
+The function should support only these special characters: Liteeral Character, Wildcard, Kleene Star, Plus Quatifier. and all other characters should have no special meaning.

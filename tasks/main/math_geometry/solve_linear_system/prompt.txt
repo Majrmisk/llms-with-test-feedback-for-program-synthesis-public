@@ -1,0 +1,2 @@
+Function: solve_linear_system(matrix: List[List[float]], b: List[float]) -> List[float]
+Description: Given a square matrix and a right-hand side vector b, solve the linear system Ax = b. The function must be implemented without relying on external linear algebra libraries. If the matrix has no unique solution, the function should raise a ValueError. Otherwise, it should return the solution vector x as a list of floats.

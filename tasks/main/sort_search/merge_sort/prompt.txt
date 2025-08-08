@@ -1,0 +1,2 @@
+Function: merge_sort(arr: List[int]) -> List[int]
+Description: Given an unsorted list of integers, implement the merge sort algorithm to return a new list with the elements in ascending order. The function must recursively divide the list into halves, sort each half, and then merge them back together in sorted order.

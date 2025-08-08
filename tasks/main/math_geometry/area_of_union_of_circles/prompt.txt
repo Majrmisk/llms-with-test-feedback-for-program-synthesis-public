@@ -1,0 +1,3 @@
+Function: area_of_union_of_circles(circles: List[Tuple[float, float, float]]) -> float
+Description: Given a list of circles defined by their center coordinates (x, y) and radius r, approximate the total area covered by the union of these circles. The function must handle overlapping regions, multiple intersections, and edge cases such as coincident circles using an approximate numerical method (e.g., Monte Carlo or grid-based sampling).
+You are not allowed to use any non-standard Python libraries

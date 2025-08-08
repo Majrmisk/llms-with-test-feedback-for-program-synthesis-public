@@ -1,0 +1,13 @@
+Function: chromatic_number(graph: Graph) -> int
+Description: Given an undirected graph represented by the custom Graph class, compute the chromatic number of the graph. The chromatic number is defined as the minimum number of colors required to color the vertices such that no two adjacent vertices share the same color. The function must be implemented using a backtracking approach with appropriate heuristics (for example, choosing the next vertex based on the number of remaining legal colors) to efficiently explore the search space. The function should return the chromatic number as an integer.
+
+class Graph:
+    def __init__(self, num_vertices: int):
+        self.num_vertices = num_vertices
+        self.adj = {i: [] for i in range(num_vertices)}
+        
+    def add_edge(self, u: int, v: int) -> None:
+        self.adj[u].append(v)
+        self.adj[v].append(u)
+
+Include the given class in your code. You are not allowed to modify it.

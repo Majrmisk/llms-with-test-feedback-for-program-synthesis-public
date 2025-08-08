@@ -1,0 +1,5 @@
+Function: is_valid_sudoku(board)
+
+Description: Given a 9x9 Sudoku board (represented as a list of lists), return True if it is valid according to Sudoku rules:
+Each row, column, and 3x3 sub-box must contain digits 1-9 without repetition.
+Empty cells are represented by '.'.

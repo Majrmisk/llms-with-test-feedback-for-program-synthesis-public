@@ -1,0 +1,12 @@
+Function: dijkstra_shortest_paths(graph: GraphWeighted, source: int) -> List[float]
+Description: Given a weighted, directed graph represented by the custom GraphWeighted class (with non-negative edge weights), compute the shortest path distances from the given source vertex to all other vertices using Dijkstra’s algorithm. The function returns a list of distances where the value at index i represents the shortest distance from the source vertex to vertex i. If a vertex is unreachable from the source, its distance should be set to float('inf').
+
+class GraphWeighted:
+    def __init__(self, num_vertices: int):
+        self.num_vertices = num_vertices
+        self.adj = {i: [] for i in range(num_vertices)}  # Each entry is a list of tuples (neighbor, weight)
+        
+    def add_edge(self, u: int, v: int, weight: float) -> None:
+        self.adj[u].append((v, weight))
+
+Include the given class in your code. You are not allowed to modify it.

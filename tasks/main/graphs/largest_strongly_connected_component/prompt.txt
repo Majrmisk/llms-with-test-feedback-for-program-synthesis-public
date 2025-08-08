@@ -1,0 +1,12 @@
+Function: largest_strongly_connected_component(graph: Graph) -> int
+Description: Given a directed graph represented by the custom Graph class, compute the size (i.e. the number of vertices) of the largest strongly connected component (SCC) in the graph. The function must implement an efficient algorithm (such as Tarjan’s algorithm) to first identify all strongly connected components, and then return the size of the component containing the maximum number of vertices. If the graph has no vertices, the function should return 0.
+
+class Graph:
+    def __init__(self, num_vertices: int):
+        self.num_vertices = num_vertices
+        self.adj = {i: [] for i in range(num_vertices)}
+        
+    def add_edge(self, u: int, v: int) -> None:
+        self.adj[u].append(v)
+
+Include the given class in your code. You are not allowed to modify it.

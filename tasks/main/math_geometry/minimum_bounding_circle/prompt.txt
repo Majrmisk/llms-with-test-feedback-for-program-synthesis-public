@@ -1,0 +1,3 @@
+Function: minimum_bounding_circle(points: List[Tuple[float, float]]) -> List[int]
+Description: Given a set of points in the 2D plane, determine the smallest circle that encloses all the points. The minimum bounding circle is uniquely defined by either two or three of the input points that lie exactly on its boundary. This function should return a list of indices corresponding to the input points that define the minimum bounding circle. The function must implement an efficient algorithm (for example, Welzl's algorithm) to correctly identify these critical points, and handle degenerate cases such as duplicate or collinear points in a consistent manner.
+You are not allowed to use any non-standard python libraries

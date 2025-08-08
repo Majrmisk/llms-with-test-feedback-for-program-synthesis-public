@@ -1,0 +1,43 @@
+Function: balance_bst_dsw(tree: BinarySearchTree) -> BinarySearchTree
+Description: Given an unbalanced binary search tree (BST), balance it using the Day–Stout–Warren (DSW) algorithm. This algorithm works in two main phases:
+
+Vine Transformation: Convert the BST into a “vine” (a right-skewed tree resembling a linked list) using repeated right rotations.
+Balancing the Vine: Convert the vine into a balanced BST by performing a series of left rotations.
+The resulting tree should maintain the BST property (i.e., an in-order traversal yields the keys in sorted order) and have a significantly reduced height compared to the original unbalanced tree. The function returns the new balanced BinarySearchTree.
+
+```
+class BSTNode:
+    def __init__(self, key: int):
+        self.key = key
+        self.left: Optional['BSTNode'] = None
+        self.right: Optional['BSTNode'] = None
+
+class BinarySearchTree:
+    def __init__(self):
+        self.root: Optional[BSTNode] = None
+
+    def insert(self, key: int) -> None:
+        # Assume a standard BST insertion (without self-balancing)
+        def _insert(node: Optional[BSTNode], key: int) -> BSTNode:
+            if node is None:
+                return BSTNode(key)
+            if key < node.key:
+                node.left = _insert(node.left, key)
+            else:
+                node.right = _insert(node.right, key)
+            return node
+        self.root = _insert(self.root, key)
+
+    def inorder_traversal(self) -> List[int]:
+        result: List[int] = []
+        def traverse(node: Optional[BSTNode]) -> None:
+            if not node:
+                return
+            traverse(node.left)
+            result.append(node.key)
+            traverse(node.right)
+        traverse(self.root)
+        return result
+```
+
+Include the given classes in your code. You are not allowed to modify them.

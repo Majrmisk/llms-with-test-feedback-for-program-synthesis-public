@@ -1,0 +1,2 @@
+Function: solve_sudoku(board: List[List[int]]) -> List[List[int]]
+Description: Implement a function solve_sudoku that takes a partially filled 9x9 Sudoku board (with 0 representing empty cells and integers 1–9 for filled cells) and returns a completed board that satisfies all Sudoku rules. The completed board must ensure that each row, each column, and each 3x3 sub-grid contains all digits from 1 to 9 exactly once. If the given puzzle is unsolvable, the function must raise a ValueError.

@@ -1,0 +1,2 @@
+Function: heap_sort(arr: List[int]) -> List[int]
+Description: Given an unsorted list of integers, implement the heap sort algorithm to return a sorted list in ascending order. The function should first transform the list into a max-heap, then repeatedly extract the maximum element and re-heapify the remaining elements.

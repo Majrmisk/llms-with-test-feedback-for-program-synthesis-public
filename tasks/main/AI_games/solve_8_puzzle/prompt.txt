@@ -1,0 +1,4 @@
+Function: solve_8_puzzle(initial_state: List[List[int]]) -> Optional[List[str]]
+Description: Given an 8-puzzle initial configuration as a 3x3 grid (with 0 representing the blank), use the A* search algorithm to find a sequence of moves that leads to the goal state: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+Moves are represented as strings: "up", "down", "left", "right". The function should use the Manhattan distance as an admissible heuristic. If the puzzle is already solved, return an empty list. If the puzzle is unsolvable, return None.
+You are not allowed to use any non-standard python libraries.
