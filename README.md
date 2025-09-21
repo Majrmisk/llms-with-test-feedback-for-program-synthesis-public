@@ -72,3 +72,6 @@ Run `python code/main.py --help` to see all options.
 - pytest - automated test runner
 
 ---
+
+## License
+This project is licensed under the [Apache License 2.0](./LICENSE).
