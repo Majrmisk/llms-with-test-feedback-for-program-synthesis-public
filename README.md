@@ -74,4 +74,4 @@ Run `python code/main.py --help` to see all options.
 ---
 
 ## License
-This project is licensed under the [Apache License 2.0](./LICENSE).
+The thesis code is licensed under the [Apache License 2.0](./LICENSE).
